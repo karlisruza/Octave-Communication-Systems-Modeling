@@ -1,15 +1,21 @@
-# ASK BER TEST
+# 4ASK BER TEST
 # Author  Karlis Edgars Ruza
 # Bakalaura Darbs 
 # 2022
-clc;
 
+# Initial setup
+clc;
+pkg load communications;
+addpath('Util');
+addpath('ModulationMethods/ask');
+
+# Main logic
 frequency = 400; # 550 Khz
 fs = frequency * 20;
 periodLength = 1 / frequency;
 samplesPerPeriod = periodLength / (1 / fs);
 
-fd = fopen('input.txt');
+fd = fopen('TestData/input_test.txt');
 data = rot90(fread(fd) - 48);
 
 dataSignal = dataToSignal(data, samplesPerPeriod);
