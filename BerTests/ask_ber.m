@@ -2,7 +2,12 @@
 # Author  Karlis Edgars Ruza
 # Bakalaura Darbs 
 # 2022
+
+# Initial setup
 clc;
+pkg load communications;
+addpath('Util');
+addpath('ModulationMethods/ask');
 
 frequency = 400; # 550 Khz
 fs = frequency * 20;
