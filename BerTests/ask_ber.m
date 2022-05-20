@@ -7,6 +7,7 @@
 clc;
 pkg load communications;
 addpath('Util');
+addpath('ECC/Threes');
 addpath('ModulationMethods/ask');
 
 frequency = 400; # 550 Khz
@@ -16,6 +17,11 @@ samplesPerPeriod = periodLength / (1 / fs);
 
 fd = fopen('input_test.txt');
 data = rot90(fread(fd) - 48);
+
+data = encode3s(data)
+data = decode3s(data)
+
+return
 
 dataSignal = dataToSignal(data, samplesPerPeriod);
 modulatedSignal = modulateAsk(dataSignal, frequency, fs);
