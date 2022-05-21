@@ -41,5 +41,7 @@ function retval = modulateAsk(data, frequency, fs)
     endif
   endfor  
   
+  plot(modulatedSignal)
+  
   retval = modulatedSignal;
 endfunction

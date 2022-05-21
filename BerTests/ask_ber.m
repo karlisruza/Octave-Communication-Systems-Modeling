@@ -7,6 +7,7 @@
 clc;
 pkg load communications;
 addpath('Util');
+addpath('TestData');
 addpath('ModulationMethods/ask');
 
 frequency = 400; # 550 Khz
@@ -22,7 +23,6 @@ modulatedSignal = modulateAsk(dataSignal, frequency, fs);
 
 snr = 5;
 receivedSignal = awgn(modulatedSignal, snr, 'measured');
-plot(receivedSignal)
 
 demodThreshold = 0.4;
 demodulatedSignal = demodAsk(receivedSignal, frequency, fs, demodThreshold);
