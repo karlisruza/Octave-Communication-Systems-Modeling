@@ -5,6 +5,7 @@
 
 # Initial setup
 clc;
+clear;
 pkg load communications;
 addpath('Util');
 addpath('ModulationMethods/psk');
@@ -20,14 +21,13 @@ samplesPerPeriod = (periodLength / (1 / fs)) + 1;
 fd = fopen('input_test.txt');
 data = rot90(fread(fd) - 48)
 
-dataSignal = dataToSignal(data, samplesPerPeriod);
+dataSignal = dataToSignal(data, samplesPerPeriod - 1);
 modulatedSignal = modulate4psk(dataSignal, frequency, fs);
-plot(modulatedSignal)
 
 # Trnasmission - Apply noise
-snr = 10;
+snr = 100;
 receivedSignal = awgn(modulatedSignal, snr, 'measured');
-plot(receivedSignal);
+plot(receivedSignal)
 
 # Demodulate and convert to binary form
 demodulatedSignal = demod4psk(receivedSignal, frequency, fs);
