@@ -18,7 +18,7 @@ periodLength = 1 / frequency;
 samplesPerPeriod = (periodLength / (1 / fs)) + 1;
 
 # Read and rotate bits from txt file
-fd = fopen('input_test.txt');
+fd = fopen('input.txt');
 data = rot90(fread(fd) - 48)
 
 dataSignal = dataToSignal(data, samplesPerPeriod - 1);
