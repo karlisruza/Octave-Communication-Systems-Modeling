@@ -7,6 +7,7 @@
 clc;
 pkg load communications;
 addpath('Util');
+addpath('ECC/Threes');
 addpath('TestData');
 addpath('ModulationMethods/ask');
 
