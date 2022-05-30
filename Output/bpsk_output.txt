@@ -1,0 +1,11 @@
+BPSK
+snr = 1, ber = 0.034000
+snr = 2, ber = 0.023545
+snr = 3, ber = 0.017727
+snr = 4, ber = 9.5455e-03
+snr = 5, ber =
+snr = 6. ber = 
+snr = 7, ber = 
+snr = 8, ber =
+snr = 9, ber = 
+snr = 10, ber = 0

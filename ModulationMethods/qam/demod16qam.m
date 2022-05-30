@@ -171,5 +171,5 @@ function retval = demod16qam (receivedSignal, frequency, fs)
   
   decodedData;
   
-  retval = dataToSignal(decodedData, samplesPerPeriod + 1);
+  retval = dataToSignal(decodedData, samplesPerPeriod);
 endfunction

@@ -3,13 +3,14 @@
 # Bakalaura Darbs 
 # 2022
 
-function retval = demodAsk (receivedSignal, frequency, fs, compareThreshold)
+function retval = demodAsk (receivedSignal, frequency, fs)
   periodLength = 1 / frequency;
   samplesPerPeriod = periodLength / (1 / fs);
   
   rectifiedSignal = abs(receivedSignal);
   filteredSignal = butterLowpass(rectifiedSignal, frequency, fs, 560, 2);
   demodulatedSignal = [];
+  compareThreshold = max(filteredSignal)/2;
   
   for i = 0: length(filteredSignal) - 1
     if (mod(i, samplesPerPeriod) == round(samplesPerPeriod / 2))
