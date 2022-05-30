@@ -1,0 +1,15 @@
+16qam
+
+snr = 1, ber = 0.1275
+snr = 2, ber = 0.1005
+snr = 3, ber = 0.058455
+snr = 4, ber = 0.047182
+snr = 5, ber = 0.041636
+snr = 6. ber = 0.028818
+snr = 7, ber = 0.014727
+snr = 8, ber = 8.6364e-03
+snr = 9, ber = 4.9020e-03
+snr = 10, ber = 1.9804e-03
+snr = 11, ber = 6.2745e-04
+snr = 12, ber = 7.8431e-05
+snr = 13, ber = 1.9608e-05

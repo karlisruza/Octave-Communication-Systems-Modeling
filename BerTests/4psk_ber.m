@@ -15,22 +15,22 @@ addpath('TestData');
 frequency = 400;
 fs = frequency * 20;
 periodLength = 1 / frequency;
-samplesPerPeriod = (periodLength / (1 / fs)) + 1;
+samplesPerPeriod = (periodLength / (1 / fs));
 
 # Read and rotate bits from txt file
 fd = fopen('input.txt');
-data = rot90(fread(fd) - 48)
+data = rot90(fread(fd) - 48);
 
-dataSignal = dataToSignal(data, samplesPerPeriod - 1);
+dataSignal = dataToSignal(data, samplesPerPeriod);
 modulatedSignal = modulate4psk(dataSignal, frequency, fs);
 
 # Trnasmission - Apply noise
-snr = 100;
+snr = 19;
 receivedSignal = awgn(modulatedSignal, snr, 'measured');
-plot(receivedSignal)
 
 # Demodulate and convert to binary form
 demodulatedSignal = demod4psk(receivedSignal, frequency, fs);
+length(demodulatedSignal)
 decodedData = signalToData(demodulatedSignal, samplesPerPeriod);
 
 [ber, percent] = biterr(data,  decodedData)

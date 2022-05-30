@@ -1,0 +1,22 @@
+4PSK
+snr = 1, ber = 0.3589
+snr = 2, ber = 0.3304
+snr = 3, ber = 0.3266
+snr = 4, ber = 0.2925
+snr = 5, ber = 0.2656
+snr = 6. ber = 0.2307
+snr = 7, ber = 0.1865
+snr = 8, ber = 0.1535
+snr = 9, ber = 0.1210
+snr = 10, ber = 0.092273
+snr = 11, ber = 0.069000
+snr = 12, ber = 0.047000
+snr = 13, ber = 0.028273
+snr = 14, ber = 0.015636
+snr = 15, ber = 6.0000e-03
+snr = 16, ber = 3.3636e-03
+snr = 17, ber = 1.1233e-03
+snr = 18, ber = 1.3725e-04
+snr = 19, ber = 0
+snr = 20, ber = 0
+

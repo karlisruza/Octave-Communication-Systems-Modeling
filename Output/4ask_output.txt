@@ -1,0 +1,27 @@
+4ASK
+snr = 1, ber = 0.3515
+snr = 2, ber = 0.3304
+snr = 3, ber = 0.2906
+snr = 4, ber = 0.2589
+snr = 5, ber = 0.2305
+snr = 6, ber = 0.1973
+snr = 7, ber = 0.1619
+snr = 8, ber = 0.1302
+snr = 9, ber = 0.1038
+snr = 10, ber = 0.084727
+snr = 11, ber = 0.057182
+snr = 12, ber = 0.043364
+snr = 13, ber = 0.032818
+snr = 14, ber = 0.026364
+snr = 15, ber = 0.023182
+snr = 16, ber = 0.019000
+snr = 17, ber = 0.018078
+snr = 18, ber = 0.013863
+snr = 19, ber = 0.011941
+snr = 20, ber = 0.010627
+snr = 23, ber = 6.4510e-03
+snr = 25, ber = 4.3725e-03
+snr = 30, ber = 1.7255e-03
+snr = 35, ber = 0
+
+

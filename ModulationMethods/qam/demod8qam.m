@@ -100,8 +100,6 @@ function retval = demod8qam (receivedSignal, frequency, fs)
       lowest = 0;
     endif
   endfor
-  
-  decodedData
-  
+    
   retval = dataToSignal(decodedData, samplesPerPeriod + 1);
 endfunction

@@ -1,0 +1,11 @@
+8qam
+snr = 1, ber = 0.039585
+snr = 2, ber = 0.025389
+snr = 3, ber = 0.014560
+snr = 4, ber = 0.010556
+snr = 5, ber = 5.8240e-03
+snr = 6. ber = 2.2750e-03
+snr = 7, ber = 5.4600e-04
+snr = 8, ber = 9.1000e-05
+snr = 9, ber = 3.9255e-05
+snr = 10, ber = 0

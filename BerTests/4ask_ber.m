@@ -17,14 +17,21 @@ samplesPerPeriod = periodLength / (1 / fs);
 
 fd = fopen('TestData/input_test.txt');
 data = rot90(fread(fd) - 48);
-
 dataSignal = dataToSignal(data, samplesPerPeriod);
+
 modulatedSignal = modulate4Ask(dataSignal, frequency, fs);
+rayleighFading(modulatedSignal, 3);
+"modulatedSignal"
+plot(modulatedSignal);
 
-snr = 300;
+return
+
+snr = 1;
 receivedSignal = awgn(modulatedSignal, snr, 'measured');
+"Received"
+length(receivedSignal);
 
-demodThreshold = 0.4;
+
 demodulatedSignal = demod4Ask(receivedSignal, frequency, fs);
 
 decodedData = signalToData(demodulatedSignal, samplesPerPeriod);
